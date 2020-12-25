@@ -6,15 +6,22 @@ class Snow_{
 		String blank2_="  ";
 		String blank3_="   ";
 		String star_="*";
+		lineCounter++;
+//		System.out.println("   /\\          \\");
+//		System.out.println("  /  \\          \\");   
+//		System.out.println(" /    \\__________\\");
+//		System.out.println(" -------   ____   |");
+//		System.out.println(" |     |  |    |  |");
+//		System.out.println(" |     |  |    |  |");
+//		System.out.println(" |_____|__|____|__|");
 		while(true){
-			lineCounter++;
 			if(lineCounter%2==0){
 				for (int a=0;a<=10;a++){
 					System.out.print(blank_+star_+blank2_+star_+star_+star_+blank_+star_+star_+blank2_+star_+blank3_);					
 				}
 			}else{
 				for (int a=0;a<=10;a++){
-				System.out.print(blank_+star_+blank2_+star_+star_+blank2_+star_+star_+blank_+star_+star_+star_+star_+blank2_+star_+blank3_);
+					System.out.print(blank_+star_+blank2_+star_+star_+blank2_+star_+star_+blank_+star_+star_+star_+star_+blank2_+star_+blank3_);
 				}
 			}
 			//TimeUnit.MINUTES.sleep(1);

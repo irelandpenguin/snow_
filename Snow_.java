@@ -7,31 +7,28 @@ class Snow_{
 		String blank3_="   ";
 		String star_="*";
 		lineCounter++;
-//		System.out.println("   /\\          \\");
-//		System.out.println("  /  \\          \\");   
-//		System.out.println(" /    \\__________\\");
-//		System.out.println(" -------   ____   |");
-//		System.out.println(" |     |  |    |  |");
-//		System.out.println(" |     |  |    |  |");
-//		System.out.println(" |_____|__|____|__|");
-		while(true){
+		for (int start_ = 1000;start_ > 0; start_--){
 			if(lineCounter%2==0){
 				for (int a=0;a<=10;a++){
-					System.out.print(blank_+star_+blank2_+star_+star_+star_+blank_+star_+star_+blank2_+star_+blank3_);					
+					System.out.print(blank_+star_+blank2_+star_+star_+star_+blank_+star_+star_+blank2_+star_+blank3_);
 				}
 			}else{
 				for (int a=0;a<=10;a++){
 					System.out.print(blank_+star_+blank2_+star_+star_+blank2_+star_+star_+blank_+star_+star_+star_+star_+blank2_+star_+blank3_);
 				}
 			}
-			//TimeUnit.MINUTES.sleep(1);
-			//Thread.sleep(1000);
-			//wait(1000);
 			try{
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			}catch(InterruptedException e){
 				e.printStackTrace();
 			}
 		}
+		System.out.println("   /\\==========\\               /\\            /\\              ----------");
+		System.out.println("  /  \\          \\             /  \\          /  \\           |");   
+		System.out.println(" /____\\_________ \\           /    \\        /    \\          |");
+		System.out.println(" |     |   ____   |         /      \\      /      \\         |");
+		System.out.println(" |     |  |    |  |        /        \\    /        \\        |");
+		System.out.println(" |     |  |    |  |       /          \\  /          \\       |");
+		System.out.println(" |_____|__|____|__|      /            \\/            \\         ---------");
 	}
 }
